@@ -1,0 +1,25 @@
+Question Title-Advanced File Management
+
+Question Link-https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+solution-
+mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx
+cp report.docx report_backup.docx
+mkdir old
+mv draft.docx old/
+mv summary.docx final_summary.docx
+cp final_summary.docx old/
+rm report_backup.docx
+
+Approach-
+First I will create a folder for that I will use mkdir command project file 
+then I will navigate to it by the command cd we can make multiple files at the 
+time so that I will use touch command and all the three files names after that 
+I have to copy report to report backup.docx so for that I will use cp then  
+they said to make a folder name of a old so I will repeat the steps mkdir old and 
+then they said to move the draft.doc to  old and so I will use mv  same for a 
+summary.docx to final _summary.docs so I will use mv. We have to remove  the 
+file report_backup.docs so I will use rm report_backup.docx  because it is empty 
+it will remove automatically
