@@ -1,0 +1,19 @@
+Question Title-The Missing Project Credentials
+
+
+Question Link-https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+
+Solution-
+
+grep -r "DB_PASSWORD" .
+pwd
+cat EventApp/config/.env > EventApp/db_password.txt
+
+
+Approach-
+grep is used to search the text and -r is used 
+to check inside directory and sub director and 
+then text to search  and then "." which means 
+current directory then pwd for current directory 
+then copying the file
