@@ -1,0 +1,28 @@
+Question Title-Create a Project Folder Structure
+
+Question Link-https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+Solution-
+cat > create-service <<'PM'
+#!/bin/bash
+mkdir  service
+cd service
+mkdir  controllers models routes middleware
+echo 'console.log("Server started");' > server.js
+echo "API Service" > README.md
+PM
+chmod 777 create-service
+./create-service
+
+Approach-
+Firstly I will use ls and pwd to look there I am and what's inside it 
+By using a cat for a create service it will print everything in create 
+service up to PM
+Then there is symbol and a bin bash symbol tell about the compiler and 
+interpreter and afterthe symbol there is a location of the bash program 
+Then to create a service mkdir then we will navigate to a service then 
+we can make a multiple folder at a same time so we will use mkdir controls 
+model routes middleware 
+Now by using Eco command we will feel the content inside README.md and server.js 
+then PM this is your to end the copying in create service then we will change the 
+permission by using chmod and for executing it we will use ./create-service
