@@ -1,0 +1,25 @@
+Question Title-The Internship Project Setup
+
+
+Question Link-https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+Solution-
+cd client-app
+git init
+echo "wdfj3tdfyuhgdigd">index.html
+echo "hdewfqdkeygdfgdet">app.js
+git add index.html app.js
+git commit -m "Initial client files"
+git remote add origin https://github.com/startup/client-app.git
+git push -u origin main
+git log --oneline
+
+
+Approach-
+First I will go to client app folder and initialise
+by using git init then add some content in index.html 
+and app.js then add those files and comment it with the 
+initial client file for adding the file remotely to a 
+GitHub we will use git remote add origin and the link 
+of the repository din per pushing it for a first time we
+have to use -u then we will check the git lock
