@@ -1,0 +1,24 @@
+Question Title-Execute a Python Script Directly
+
+
+Question Link-https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+
+Solution-
+cat > hello.py <<"XSPARK"
+#!/usr/bin/env python3
+print("Hello from Python")
+XSPARK
+chmod 777 hello.py
+./hello.py
+
+
+
+Approach-
+For printing in a hello.py file up to XSPARK
+We will use the first line of command after that
+we will navigate to a python 3 so for that it is in 
+a shebang/usr/bin/env after that we will use the syntax
+of a python then the word XSPARK for knowing the file 
+to read up to here now we will give the hello.py and 
+execute command and then we will execute
