@@ -1,0 +1,45 @@
+Question Title-Build Pipeline Directory Tree
+
+
+Question Link-https://my.newtonschool.co/playground/code/r2ui5gw5lhqt?lecture_hash=n9ynhcuvkld8
+
+
+Solution-
+
+
+mkdir -p pipeline/stages/build
+mkdir -p pipeline/stages/test/unit/integration
+mkdir -p pipeline/env/staging
+mkdir -p pipeline/env/prod
+mkdir -p pipeline/artifacts/old
+
+chmod 750 pipeline/stages
+chmod 770 pipeline/artifacts
+chmod 700 pipeline/env
+
+cd pipeline/stages/build/
+touch app.py config.json NOTES.md
+echo "Build stage initialized." > NOTES.md
+
+cd ../..
+cd artifacts/old/
+touch build.log test.log deploy.log
+chmod 640 build.log test.log deploy.log
+
+
+Approach-
+We can make a folder by using mkdir but if 
+it is folder with in a folder so we can do it in a
+simple way as well as a by using manually to but 
+I will you simple just writing-p which will 
+automatically create if it is not there then only sub 
+directory or a directory starting five lines are on that
+only next we are changing the permission of a stage 
+artifact and env folder 750,770 and 700 respective 
+then we are making the file inside a build which is 
+inside a stages and which is inside in a pipeline and 
+adding some content in a note.md then we are going two 
+times back side so we will return to the folder pipeline 
+then we will go to artefact then old and create a file build.log 
+test.log deploy.log now we will change the permission of all the 
+three file to 640
