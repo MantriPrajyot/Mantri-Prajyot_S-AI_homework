@@ -1,0 +1,36 @@
+Question Title- Data Breach Response
+
+
+Question Link-https://my.newtonschool.co/playground/code/orlr84xpc3oo?lecture_hash=vifkrugjcwth
+
+
+Solution-
+cp breach_response/evidence/log_dump.txt breach_response/log_dump.txt
+chmod 755 breach_response/evidence
+mv breach_response/evidence breach_response/secure/evidence
+chmod 555 breach_response/secure/evidence
+chmod 644 breach_response/reports/incident_summary.txt
+echo "Breach confirmed" >> breach_response/reports/incident_summary.txt
+chmod 444 breach_response/reports/incident_summary.txt
+echo "Forensics Complete" > breach_response/secure/forensics_report.txt
+chmod 600 breach_response/secure/forensics_report.txt
+chmod 644 breach_response/reports/incident_summary.txt
+echo "Escalated to security team" >> breach_response/reports/incident_summary.txt
+chmod 444 breach_response/reports/incident_summary.txt
+
+
+Approach-
+First I will check the same thing from previous that is ls and pwd
+And choose the step to do with a pathway not by manually going inside 
+any folder or your file and then changing the permission for anything 
+So for copying the long time the lock them has read only so it is fine 
+as we are moving the whole thing we don't have to check or want to read it 
+so we can directly move it 
+Then we will change the permission of evidence to 755 then we will move the 
+evidence from branch repository to a secure repository which in a branch depository
+and we will under the process by changing the evidence file by previous permission
+now we will change the incident summer.txt 2644 and we will write breach confirmed in 
+incidents summary.t and then we will do same process by changing its permission to the previous 
+that is 444 now we will add forensic complete to forensic report.t now we will change the permission 
+of  forensic report 3HD to 600 then we will change the permission of incident-summary.txt and we will 
+print Escalated to security team in incidents summary.txt then we will reach the incident summary.txt to 444
