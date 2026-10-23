@@ -1,0 +1,25 @@
+Question Title-API-Service Directory Workflow
+
+
+Question Link-https://my.newtonschool.co/playground/code/5ypni48t3pzs
+
+
+Solution-
+cd api-service
+git init
+git add README.md
+git commit -m "Add documentation"
+git add server.js routes.js package.json
+git commit -m "Add server files"
+git status 
+git log --oneline
+
+
+
+Approach-
+Navigate the API service then we will use git init 
+then we will add README.md and then comment it with -m 
+and add documentation as we can add multiple file at the 
+time so we will add server.js roots.js package.json at
+the same time by commenting it add server file then we 
+will run the git status then git log
