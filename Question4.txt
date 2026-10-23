@@ -1,0 +1,25 @@
+Question Title-Deployment Project Permissions
+
+
+Question Link-https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+
+Solution-
+chmod 700 deployment/app/*.py
+chmod 770 deployment/datasets deployment/datasets/*.csv
+chmod 644 deployment/docs/OVERVIEW.md
+chmod 755 deployment/bin/*.sh
+
+
+
+Approach-
+Actually we have pathway so we can directly change that so for changing all 
+the files in app we have a two ways first manually changing the permission by 
+writing each file pathway or changing it at once I will use the second option 
+so for that I will write the whole pathway and for the last file name I will 
+add *.py which means all the files in app ending with .py
+Second we have to change the files permission inside the data set so we will 
+use the same thing then for overview.md
+As well as for changing the permission in a bin *.sh changes all the files 
+permission inside the bin
+And for changing the permission we will use chmod at every point
